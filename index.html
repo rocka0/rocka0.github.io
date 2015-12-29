@@ -8,12 +8,253 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
+  <style>
+  @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+* {
+padding: 0;
+margin: 0; }
 
+body {
+font-family: "Ubuntu", sans-serif;
+font-size: 100%;
+background: #f8f8f8; }
+
+a {
+text-decoration: none;
+color: #666; }
+a:hover {
+  color: #999; }
+
+p {
+line-height: 2em;
+margin: 0 0 20px; }
+
+.wrap {
+max-width: 700px;
+margin: auto; }
+
+.header {
+width: 100%;
+min-height: 450px;
+margin: 0 auto 30px;
+padding: 10px 0;
+background: url(../img/header-bg.jpg) top center no-repeat fixed;
+background-size: 100%; }
+@media screen and (max-width: 1500px) {
+  .header {
+    background-size: auto; } }
+.header .h1 {
+  margin: 10px 0 20px;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  text-shadow: #000 0px 2px 4px; }
+
+.head-wrap {
+margin: 30px auto 30px;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out;
+text-align: center; }
+
+.tagline {
+display: block;
+padding: 20px 0 0;
+opacity: 0;
+color: #fff;
+font-weight: 600;
+text-shadow: #000 0px 1px 3px;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out; }
+
+.shift-text {
+margin: 80px auto 110px; }
+.shift-text .text-body {
+  height: 120px; }
+.shift-text .tagline {
+  opacity: 0.9; }
+
+/* text editor styles */
+.text-editor-wrap {
+display: block;
+margin: auto;
+max-width: 530px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+clear: both;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out; }
+
+.title-bar {
+padding: 5px 0;
+font-family: "Lucida Grande", sans-serif;
+font-size: 0.75em;
+text-align: center;
+text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+background-color: #f8f8f8;
+background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+border-bottom: #6a6a6a 1px solid; }
+
+.text-body {
+height: 250px;
+background-color: rgba(0, 0, 0, 0.85);
+padding: 10px;
+color: #f0f0f0;
+text-shadow: #000 0px 1px 0px;
+font-family: "Consolas", "Courier New", "Courier";
+font-size: 1.75em;
+line-height: 1.40em;
+font-weight: 500;
+text-align: left;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out; }
+
+.h2 {
+margin: 10px 0; }
+
+.note {
+text-align: center; }
+
+.inline-code {
+padding: 2px 5px;
+background: #fff;
+border: #CCC 1px solid;
+border-radius: 4px; }
+
+hr {
+margin: 20px 0;
+border: 0;
+border-bottom: #fff 1px solid;
+border-top: #f0f0f0 1px solid; }
+
+pre {
+margin: 0 auto 20px;
+padding: 20px;
+color: #444;
+font-family: "Consolas", "Courier New", "Courier";
+font-weight: 500;
+background: #fff;
+border: #EEE 1px solid;
+border-radius: 10px;
+overflow: auto; }
+
+.typed-cursor {
+opacity: 1;
+font-weight: 100;
+-webkit-animation: blink 0.7s infinite;
+-moz-animation: blink 0.7s infinite;
+-ms-animation: blink 0.7s infinite;
+-o-animation: blink 0.7s infinite;
+animation: blink 0.7s infinite; }
+
+@-keyframes blink {
+0% {
+  opacity: 1; }
+
+50% {
+  opacity: 0; }
+
+100% {
+  opacity: 1; } }
+@-webkit-keyframes blink {
+0% {
+  opacity: 1; }
+
+50% {
+  opacity: 0; }
+
+100% {
+  opacity: 1; } }
+@-moz-keyframes blink {
+0% {
+  opacity: 1; }
+
+50% {
+  opacity: 0; }
+
+100% {
+  opacity: 1; } }
+@-ms-keyframes blink {
+0% {
+  opacity: 1; }
+
+50% {
+  opacity: 0; }
+
+100% {
+  opacity: 1; } }
+@-o-keyframes blink {
+0% {
+  opacity: 1; }
+
+50% {
+  opacity: 0; }
+
+100% {
+  opacity: 1; } }
+.btn-wrap {
+display: block;
+margin: 0 auto 1em;
+clear: both;
+text-align: center; }
+
+.btn {
+display: inline-block;
+position: relative;
+margin: 0 10px 5px;
+text-align: left;
+vertical-align: top; }
+@media screen and (max-width: 500px) {
+  .btn {
+    display: block; } }
+.btn > a {
+  display: block;
+  position: relative;
+  padding: 0.8em 1.75em 0.7em;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0px;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  background-color: #3479b4;
+  border-radius: 4px;
+  z-index: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .btn > a:hover {
+    background-color: #4f92cc; }
+.btn p {
+  line-height: 1em; }
+  .btn p a {
+    color: #333; }
+    .btn p a:hover {
+      color: #CCC; }
+
+  </style>
   <title>Rocka0</title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -79,8 +320,15 @@
       <div class="header-content-inner">
         <h1>Rocka0</h1>
         <hr>
-        <p>An ace programmer, a learner, a reader, a helper and many more things!</p>
-        <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        <div class="head-wrap">
+          <div class="text-editor-wrap">
+            <div class="title-bar"><span class="title" style="color: black;">terminal: 100X80 ; rocka0</span></span></div>
+            <div class="text-body">
+              $ <span id="typed"></span>
+            </div>
+          </div>
+          <span class="tagline"><a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a></span>
+        </div>
       </div>
     </div>
   </header>
@@ -90,280 +338,314 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
           <h2 class="section-heading">About me</h2>
-          <hr class="light">
+          <br>
           <p class="text-faded">~> Hi, my name is Tush Chen. I'm a programmer with a passion for web programming.<br>=>I am an 8<sup>th</sup> grade student and the best in my school.<br>~> My teachers really admire my work!<br>=> I want to be able to code fluently in all programming languages!</p>
-          <a href="#portfolio" class="btn btn-default btn-xl page-scroll">See my projects!</a>
+            <a href="#portfolio" class="btn btn-default btn-xl page-scroll">See my projects!</a>
+          </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">What all I know</h2>
+            <br>
+          </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+              <h3>Ruby</h3>
+              <p class="text-muted">One of my favourite languages along with the best framework: Ruby on Rails!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa fa-file-text wow bounceIn text-primary" data-wow-delay=".1s"></i>
+              <h3>Html and Css</h3>
+              <p class="text-muted">The language used to make this webpage!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".2s"></i>
+              <h3>Python</h3>
+              <p class="text-muted">The easiest language to learn and the most powerful too</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-wrench wow bounceIn text-primary" data-wow-delay=".3s"></i>
+              <h3>JavaScript</h3>
+              <p class="text-muted">The de-facto factor of the web. It is responsible for all the cool animations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading">My blog</h2>
+            <br>
+            <p class="text-faded">I have a blog where I talk about programming. I update it on a day to day basis, so subscribe to my blog to stay up to date!</p>
+            <a href="http://rocka0.github.io/myblog" class="btn btn-default btn-xl page-scroll">Blog!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://foodpandapp.herokuapp.com" class="portfolio-box">
+              <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Rails
+                  </div>
+                  <div class="project-name">
+                    Foodpanda App
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://neo.herokuapp.com" class="portfolio-box">
+              <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    PHP
+                  </div>
+                  <div class="project-name">
+                    Neo
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://www.codeskulptor.org/#user16_10OeYsiUZ9WkazO.py" class="portfolio-box">
+              <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Python
+                  </div>
+                  <div class="project-name">
+                    Ricerocks
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/myblog" class="portfolio-box">
+              <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Jekyll
+                  </div>
+                  <div class="project-name">
+                    My blog
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/Js-Sudoko-Solver/" class="portfolio-box">
+              <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Javascript
+                  </div>
+                  <div class="project-name">
+                    A javascript sudoku solver
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/ace_editor" class="portfolio-box">
+              <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Html
+                  </div>
+                  <div class="project-name">
+                    A html editor online
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/terminal_design" class="portfolio-box">
+              <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Html & CSS
+                  </div>
+                  <div class="project-name">
+                    Terminal Design
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/inspiration" class="portfolio-box">
+              <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Javascript
+                  </div>
+                  <div class="project-name">
+                    Motivation
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a href="http://rocka0.github.io/phone" class="portfolio-box">
+              <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Html
+                  </div>
+                  <div class="project-name">
+                    Phone emulator
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="bg-dark">
+      <div class="container text-center">
+        <div class="call-to-action">
+          <h2>View my github profile</h2>
+          <a href="http://github.com/rocka0" class="btn btn-primary btn-xl page-scroll" ><i class="fa fa-github fa-3x wow bounceIn"></i>View Now!</a>
+        </div>
+      </div>
+    </aside>
+    <section>
+      <div class="container">
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+
+        s.src = 'http://rocka0.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
   </section>
-
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">What all I know</h2>
-          <hr class="primary">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box">
-            <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-            <h3>Ruby</h3>
-            <p class="text-muted">One of my favourite languages along with the best framework: Ruby on Rails!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box">
-            <i class="fa fa-4x fa fa-file-text wow bounceIn text-primary" data-wow-delay=".1s"></i>
-            <h3>Html and Css</h3>
-            <p class="text-muted">The language used to make this webpage!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box">
-            <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".2s"></i>
-            <h3>Python</h3>
-            <p class="text-muted">The easiest language to learn and the most powerful too</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box">
-            <i class="fa fa-4x fa-wrench wow bounceIn text-primary" data-wow-delay=".3s"></i>
-            <h3>JavaScript</h3>
-            <p class="text-muted">The de-facto factor of the web. It is responsible for all the cool animations</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-primary" id="blog">
+  <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h2 class="section-heading">My blog</h2>
-          <hr class="light">
-          <p class="text-faded">I have a blog where I talk about programming. I update it on a day to day basis, so subscribe to my blog to stay up to date!</p>
-          <a href="http://rocka0.github.io/myblog" class="btn btn-default btn-xl page-scroll">Blog!</a>
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <br>
+          <p>Have any queries? Email me and I'll get back to you as soon as possible</p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 text-center">
+
+          <i class="fa fa-mail-reply fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+          <p><a href="mailto:tushar.chenan@outlook.com">tushar.chenan@outlook.com</p></a>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+          <p><a href="mailto:tushar.chenan@outlookcom">tusky2002@gmail.com</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-      <div class="row no-gutter">
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://foodpandapp.herokuapp.com" class="portfolio-box">
-            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Rails
-                </div>
-                <div class="project-name">
-                  Foodpanda App
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://neo.herokuapp.com" class="portfolio-box">
-            <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  PHP
-                </div>
-                <div class="project-name">
-                  Neo
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://www.codeskulptor.org/#user16_10OeYsiUZ9WkazO.py" class="portfolio-box">
-            <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Python
-                </div>
-                <div class="project-name">
-                  Ricerocks
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/myblog" class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Jekyll
-                </div>
-                <div class="project-name">
-                  My blog
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/Js-Sudoko-Solver/" class="portfolio-box">
-            <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Javascript
-                </div>
-                <div class="project-name">
-                  A javascript sudoku solver
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/ace_editor" class="portfolio-box">
-            <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Html
-                </div>
-                <div class="project-name">
-                  A html editor online
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/terminal_design" class="portfolio-box">
-            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Html & CSS
-                </div>
-                <div class="project-name">
-                  Terminal Design
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/inspiration" class="portfolio-box">
-            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Javascript
-                </div>
-                <div class="project-name">
-                  Motivation
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a href="http://rocka0.github.io/phone" class="portfolio-box">
-            <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Html
-                </div>
-                <div class="project-name">
-                  Phone emulator
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
-  <aside class="bg-dark">
-    <div class="container text-center">
-      <div class="call-to-action">
-        <h2>View my github profile</h2>
-        <a href="http://github.com/rocka0" class="btn btn-primary btn-xl page-scroll" ><i class="fa fa-github fa-3x wow bounceIn"></i>View Now!</a>
-      </div>
-    </div>
-  </aside>
-  <section>
-    <div class="container">
-      <div id="disqus_thread"></div>
-      <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-      */
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-      var d = document, s = d.createElement('script');
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
 
-      s.src = 'http://rocka0.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/wow.min.js"></script>
 
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading">Let's Get In Touch!</h2>
-        <hr class="primary">
-        <p>Have any queries? Email me and I'll get back to you as soon as possible</p>
-      </div>
-      <div class="col-lg-4 col-lg-offset-2 text-center">
+  <!-- Custom Theme JavaScript -->
+  <script src="js/creative.js"></script>
 
-        <i class="fa fa-mail-reply fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-        <p><a href="mailto:tushar.chenan@outlook.com">tushar.chenan@outlook.com</p></a>
-      </div>
-      <div class="col-lg-4 text-center">
-        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-        <p><a href="mailto:tushar.chenan@outlookcom">tusky2002@gmail.com</a></p>
-      </div>
-    </div>
-  </div>
-</section>
+  <script type="text/javascript" src="js/typed.custom.js"></script>
+  <script>
+  $(function(){
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+    $("#typed").typed({
+      strings: ["Hello, I am rocka0", "You can also call me Tush Chen", "I am a reader", "A learner", "A writer" , "A developer" , "A thinker" , "A maker" ,    "but most of all.....", "I am a programmer!!!!"],
+      typeSpeed: 30,
+      callback: function(){
+        shift();
+      }
+    });
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+  });
+  function shift(){
+    $(".head-wrap").addClass("shift-text");
+    terminalHeight();
+  }
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
+  function terminalHeight(){
+    var termHeight = $(".terminal-height");
+    var value = termHeight.text();
+    value = parseInt(value);
+    setTimeout(function(){
+      if (value > 10){
+        value = value-1;
+        this.txtValue = value.toString();
+        termHeight.text(this.txtValue);
+        self.terminalHeight();
+      }
+      else{
+        clearTimeout();
+      }
+    }, 10);
+  }
+  </script>
 
 </body>
 
