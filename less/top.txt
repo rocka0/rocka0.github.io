@@ -1,0 +1,35 @@
+top - 10:47:53 up 1 day,  6:47,  0 users,  load average: 6.28, 5.56, 5.26                                                                            
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie                                                                                 
+%Cpu(s):  8.9 us, 16.5 sy,  0.0 ni, 73.9 id,  0.7 wa,  0.0 hi,  0.0 si,  0.0 st                                                                      
+KiB Mem : 19788736+total, 13375443+free, 48066292 used, 16066636 buff/cache                                                                          
+KiB Swap: 16777212 total, 16035216 free,   741996 used. 14703859+avail Mem                                                                           
+                                                                                                                                                     
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                        
+      1 26456     20   0 1001456  64340   6924 S   0.0  0.0   0:01.28 --CODINGGROUND-                                                                
+     19 26456     20   0   11796   1692   1348 S   0.0  0.0   0:00.00 sh                                                                             
+     28 26456     20   0   11792   1748   1404 S   0.0  0.0   0:00.00 bash                                                                           
+     30 26456     20   0   40348   1756   1288 R   0.0  0.0   0:00.00 top  
+
+top - 10:51:50 up 1 day,  6:51,  0 users,  load average: 8.11, 6.79, 5.81                                                                            
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie                                                                                 
+%Cpu(s): 10.1 us, 21.0 sy,  0.0 ni, 68.0 id,  0.8 wa,  0.0 hi,  0.1 si,  0.0 st                                                                      
+KiB Mem : 19788736+total, 13130251+free, 49892760 used, 16692084 buff/cache                                                                          
+KiB Swap: 16777212 total, 16094032 free,   683180 used. 14520052+avail Mem                                                                           
+                                                                                                                                                     
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                        
+      1 26456     20   0 1001456  66596   6928 S   0.0  0.0   0:01.43 --CODINGGROUND-                                                                
+     19 26456     20   0   11796   1692   1348 S   0.0  0.0   0:00.00 sh                                                                             
+     28 26456     20   0   11792   1748   1404 S   0.0  0.0   0:00.00 bash                                                                           
+     31 26456     20   0   40348   1752   1288 R   0.0  0.0   0:00.09 top        
+
+top - 12:37:52 up 1 day,  6:47,  0 users,  load average: 6.28, 5.56, 5.26                                                                            
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie                                                                                 
+%Cpu(s):  8.9 us, 16.5 sy,  0.0 ni, 73.9 id,  0.7 wa,  0.0 hi,  0.0 si,  0.0 st                                                                      
+KiB Mem : 19788736+total, 13375443+free, 48066292 used, 16066636 buff/cache                                                                          
+KiB Swap: 16777212 total, 16035216 free,   741996 used. 14703859+avail Mem                                                                           
+                                                                                                                                                     
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                        
+      1 26456     20   0 1001456  64340   6924 S   0.0  0.0   0:01.28 --CODINGGROUND-                                                                
+     19 26456     20   0   11796   1692   1348 S   0.0  0.0   0:00.00 sh                                                                             
+     28 26456     20   0   11792   1748   1404 S   0.0  0.0   0:00.00 bash                                                                           
+     30 26456     20   0   40348   1756   1288 R   0.0  0.0   0:00.00 top  
